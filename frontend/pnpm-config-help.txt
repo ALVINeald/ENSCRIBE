@@ -1,0 +1,27 @@
+Version 11.9.0
+Usage: pnpm config set <key> <value>
+       pnpm config get <key>
+       pnpm config get --json <key>
+       pnpm config delete <key>
+       pnpm config list
+
+Manage the pnpm configuration files.
+
+Commands:
+      delete               Remove the config key from the config file
+      get                  Print the config value for the provided key
+      list                 Show all the config settings
+      set                  Set the config key to the value provided
+
+Options:
+  -g, --global                     Sets the configuration in the global config
+                                   file
+      --json                       Show all types of values in JSON format (not
+                                   just objects and arrays)
+      --location <project|global>  When set to "project", the
+                                   pnpm-workspace.yaml file will be used if it
+                                   exists. If only .npmrc exists, it will be
+                                   used. If neither exists, a
+                                   pnpm-workspace.yaml file will be created.
+
+Visit https://pnpm.io/11.x/cli/config for documentation about this command.
